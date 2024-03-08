@@ -97,7 +97,6 @@ const Payment = ({
   useEffect(() => {
     setIsLoading(false)
     setError(null)
-    console.log("is stripeeeee",isStripe);
   }, [isOpen])
 
   return (
@@ -113,7 +112,7 @@ const Payment = ({
             }
           )}
         >
-          Payment {isStripe} isstripe
+          Payment 
           {!isOpen && paymentReady && <CheckCircleSolid />}
         </Heading>
         {!isOpen && paymentReady && (
